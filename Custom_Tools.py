@@ -6,6 +6,7 @@
 import pandas as pd
 import seaborn as sns
 import numpy as np
+from tqdm.notebook import tqdm
 
 
 class preprocess_afya:
@@ -319,20 +320,12 @@ class overfit:
 
 
 def feature_selection(X, y, algorithms, iterations=5):
-
-    from timeit import default_timer as timer
     
     from sklearn.feature_selection import SelectKBest
 
-    init_time = timer()
-
     Kbest_all = pd.DataFrame()
 
-    for iteration in range(0, iterations):
-
-        it_time = timer()
-
-        print('Iteration: ' + str(iteration+1))
+    for iteration in tqdm(range(0, iterations)):
 
         Kbest_it = pd.DataFrame()
 
@@ -355,13 +348,7 @@ def feature_selection(X, y, algorithms, iterations=5):
         else:
             Kbest_all = pd.concat([Kbest_all, Kbest_it])
 
-        now = timer()
-
-        print('Total iteration time: '+str(round(now - it_time, 0))+' seconds.\n')
-
     Kbest_all['Total_points'] = Kbest_all.drop('Columns', axis=1).sum(axis=1)
-
-    print('\nTotal operation time: ' + str(round((now - init_time)/60, 2))+' minutes.')
 
     return Kbest_all.sort_values('Total_points', ascending=False)
     
