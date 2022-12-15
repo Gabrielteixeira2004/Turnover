@@ -14,12 +14,18 @@ def drop_turnover(df):
     integrada: Only used to filter.
     salario: Won't work with it yet.
     tipo_função: Only used to filter.
+    codsecao: contagion function.
+    funcao_descricao: contagion function.
+    codsecao_gerencia: contagion function.
+    funcao_descricao_clean: contagion function.
     '''
 
     drop_feature = ['codigo_situacao', 'codsituacao', 'situacao',
                     'datademissao', 'motivo_desligamento',
                     'tipo_desligamento_classificação', 'tipo_desligamento',
-                    'integrada', 'salario', 'tipo_função']
+                    'integrada', 'salario', 'codsecao', 'tipo_função',
+                    'funcao_descricao', 'codsecao_gerencia',
+                    'funcao_descricao_clean']
 
     '''
     Unique records and high cardinality features
@@ -33,7 +39,6 @@ def drop_turnover(df):
                         ]
 
     alta_cardinalidade = ['codcoligada',
-                          'codsecao',
                           'filial_cidade',
                           'codsindicato',
                           'residencia_cidade',
@@ -43,9 +48,7 @@ def drop_turnover(df):
                           'Filial',
                           'nome_sindicato',
                           'nome_sindicato_abreviado',
-                          'filial_descricao',
                           'setor',
-                          'funcao_descricao',
                           'VP',
                           'filial_estado']
 
