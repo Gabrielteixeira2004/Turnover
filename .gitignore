@@ -7,3 +7,6 @@ threshold.pkl
 turnover_general_model.pkl
 Scaler.pkl
 feature_engineering.py
+.ipynb_checkpoints/Custom_Tools-checkpoint.py
+.ipynb_checkpoints/feature_engineering-checkpoint.py
+*.log
