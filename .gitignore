@@ -54,3 +54,14 @@ preprocess_turnover.py
 .ipynb_checkpoints/Untitled-checkpoint.ipynb
 .ipynb_checkpoints/Turnover-checkpoint.ipynb
 feature_engineering.py
+feature_engineering_polars.py
+feature_engineering.py
+feature_selection.pkl
+final_transformation.py
+population_filter.py
+preprocess_turnover.py
+Scaler.pkl
+target_definition.py
+target_definition_polars.py
+turnover_general_model.pkl
+Untitled.ipynb
