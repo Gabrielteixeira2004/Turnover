@@ -15,9 +15,11 @@ def drop_turnover(df):
     salario: Won't work with it yet.
     tipo_função: Only used to filter.
     codsecao: contagion function.
-    funcao_descricao: contagion function.
     codsecao_gerencia: contagion function.
+    codsecao_gerencia_group_contagion: contagion function.
+    funcao_descricao: contagion function.
     funcao_descricao_clean: contagion function.
+    funcao_descricao_clean_group_contagion: contagion function.
     '''
 
     drop_feature = ['codigo_situacao', 'codsituacao', 'situacao',
@@ -25,7 +27,8 @@ def drop_turnover(df):
                     'tipo_desligamento_classificação', 'tipo_desligamento',
                     'integrada', 'salario', 'codsecao', 'tipo_função',
                     'funcao_descricao', 'codsecao_gerencia',
-                    'funcao_descricao_clean']
+                    'funcao_descricao_clean', 'codsecao_gerencia_group_contagion',
+                    'funcao_descricao_clean_group_contagion']
 
     '''
     Unique records and high cardinality features

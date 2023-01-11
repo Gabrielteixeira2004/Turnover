@@ -49,3 +49,8 @@ Scaler.pkl
 population_filter.py
 final_transformation.py
 preprocess_turnover.py
+.ipynb_checkpoints/feature_engineering_polars-checkpoint.py
+.ipynb_checkpoints/target_definition_polars-checkpoint.py
+.ipynb_checkpoints/Untitled-checkpoint.ipynb
+.ipynb_checkpoints/Turnover-checkpoint.ipynb
+feature_engineering.py
