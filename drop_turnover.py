@@ -12,7 +12,6 @@ def drop_turnover(df):
     Data Leakage: motivo_desligamento, tipo_desligamento_classificação,
     tipo_desligamento
     integrada: Only used to filter.
-    salario: Won't work with it yet.
     tipo_função: Only used to filter.
     codsecao: contagion function.
     codsecao_gerencia: contagion function.
@@ -25,7 +24,7 @@ def drop_turnover(df):
     drop_feature = ['codigo_situacao', 'codsituacao', 'situacao',
                     'datademissao', 'motivo_desligamento',
                     'tipo_desligamento_classificação', 'tipo_desligamento',
-                    'integrada', 'salario', 'codsecao', 'tipo_função',
+                    'integrada', 'codsecao', 'tipo_função',
                     'funcao_descricao', 'codsecao_gerencia',
                     'funcao_descricao_clean', 'codsecao_gerencia_group_contagion',
                     'funcao_descricao_clean_group_contagion']
